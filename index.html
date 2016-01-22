@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8">
+<title>Random set of quiz questions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Include FontAwesome for loading animation (not required to for this to work) --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Styles that must be included for this to work --><link rel="stylesheet" type="text/css" href="quiz.css">
+<!-- Nice looking styles, can be changed to make look pretty (not required to for this to work) --><link rel="stylesheet" type="text/css" href="style.css">
+<!-- Include some jQuery --><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Include Modernizr for flex-box detection (not required to for this to work) -->
+<script type="text/javascript" src="js/modernizr.custom.62055.js"></script>
+</head>
+
+<body>
+<div class="quiz-container">	
+	<!-- start Version 1 of quiz - only show if random number is 1 -->
+	<div id="quiz1" class="quiz">
+	<h2>Quiz 1</h2>
+		<div class="questions">
+			<h3>Question 1</h3>
+			<div class="options">
+				<div class="answer wrong three">Wrong</div>
+				<div class="answer right three">Right</div>
+				<div class="answer wrong three">Wrong</div>
+			</div>
+			<div class="message"> &nbsp; </div>
+		</div>
+		<div class="questions">
+			<h3>Question 2</h3>
+			<div class="options">
+				<div class="answer wrong three">This answer is wrong, but it runs on two lines sometimes.</div>
+				<div class="answer wrong three">Wrong</div>
+				<div class="answer right three">Right</div>
+			</div>
+			<div class="message"> &nbsp; </div>
+		</div>
+		<div class="questions">
+			<h3>Question 3</h3>
+			<div class="options">
+				<div class="answer wrong two">Wrong</div>
+				<div class="answer right two">Right</div>
+			</div>
+			<div class="message"> &nbsp; </div>
+		</div>
+	</div>
+	<!-- end Version 1 --> 
+	
+	<!-- start Version 2 of quiz - only show if random number is 2 -->
+	<div id="quiz2" class="quiz">
+	<h2>Quiz 2</h2>
+		<div class="questions">
+			<h3>Question 1</h3>
+			<div class="options">
+				<div class="answer wrong three">This answer is wrong, but it runs on two lines sometimes.</div>
+				<div class="answer right three">Right</div>
+				<div class="answer wrong three">Wrong</div>
+			</div>
+			<div class="message"> &nbsp; </div>
+		</div>
+		<div class="questions">
+			<h3>Question 2</h3>
+			<div class="options">
+				<div class="answer wrong two">Wrong</div>
+				<div class="answer right two">Right</div>
+				
+			</div>
+			<div class="message"> &nbsp; </div>
+		</div>
+		<div class="questions">
+			<h3>Question 3</h3>
+			<div class="options">
+				<div class="answer wrong three">Wrong</div>
+				<div class="answer wrong three">Wrong</div>
+				<div class="answer right three">Right</div>
+			</div>
+			<div class="message"> &nbsp; </div>
+		</div>
+	</div>
+<!-- end Version 2 --> 
+	
+<!-- start Version 3 of quiz - only show if random number is 3 -->
+	<div id="quiz3" class="quiz">
+	<h2>Quiz 3</h2>
+		<div class="questions">
+			<h3>Question 1</h3>
+			<div class="options">
+				<div class="answer wrong three">Wrong</div>
+				<div class="answer wrong three">Wrong</div>
+				<div class="answer right three">Right</div>
+			</div>
+			<div class="message"> &nbsp; </div>
+		</div>
+		<div class="questions">
+			<h3>Question 2</h3>
+			<div class="options">
+				<div class="answer wrong three">Wrong</div>
+				<div class="answer right three">Right</div>
+				<div class="answer wrong three">Wrong</div>
+			</div>
+			<div class="message"> &nbsp; </div>
+		</div>
+		<div class="questions">
+			<h3>Question 3</h3>
+			<div class="options">
+				<div class="answer right two">Right</div>
+				<div class="answer wrong two">This answer is wrong, but it runs on two lines sometimes.</div>
+			</div>
+			<div class="message"> &nbsp; </div>
+		</div>
+	</div>
+<!-- end Version 3 --> 
+</div>
+<!-- start modal box - only show if all answered correctly for any quiz option -->
+<div id="winner">
+	<div id="modal">
+				Winner winner chicken dinner!
+	</div>
+</div>
+<!-- end Modal box --> 
+
+<!--Display random content--> <script type="text/javascript" src="js/display-random-content.js"></script>
+<!--Check if answers are correct--><script type="text/javascript" src="js/check-quiz-answers.js"></script> 
+</body>
+</html>

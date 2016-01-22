@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* Random Quiz Set with Answer Confirmation and Modal Completion Message */
+
+/* This is the CSS you need at a very basic level to make this work */
+.quiz { /* Hide all quizzes not selected */
+	display: none;
+}
+#winner { /* Hide modal window until ready and make it full screen it when it is */
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	display: none;
+}
+.answer { /* Hovering over an answer shows the hand cursor */
+	cursor: pointer;
+}
+.disable, .clicked { /* If clicked, cursor should not change */
+	cursor: default;
+}

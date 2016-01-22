@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* General Classes */
+body {
+	font-family: "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: medium;
+	color: #000;
+	text-align: center;
+}
+.js .quiz-container:before { /* Show an animation while the quiz is loading if slow */
+	content: "\f110";
+	-webkit-animation: fa-spin 1s infinite steps(8);
+	animation: fa-spin 1s infinite steps(8);
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	font-size: 100px;
+	color: #f0e07d;
+	z-index: 1;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	top: 50%;
+	margin-top: -50px;
+}
+.quiz { /* Show the quiz over the loading animation, if present */
+	background-color: #fff;
+	z-index: 2;
+	position: relative;
+}
+.quizwrap { /* Height for loading icon to show in which quiz is loading, if present */
+	min-height: 500px;
+}
+
+/* Set positioning for items */
+.questions {
+	margin: 0 2rem 2rem 2rem;
+}
+.options {
+	margin-top: 2em;
+	display: flex;
+	justify-content: space-between;
+}
+.no-flexbox .options {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 10px;
+	width: 100%;
+}
+.answer {
+	font-size: 1.2em;
+	line-height: 1.3em;
+	min-height: 3em;
+	padding: 0.2em 1em;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 10px;
+	box-sizing: border-box;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flexbox .answer:first-child {
+	margin-right: 1rem;
+}
+.flexbox .three.answer:last-child {
+	margin-left: 1rem;
+}
+.two {
+	width: 50%;
+}
+.three {
+	width: 33%;
+}
+.no-flexbox .answer {
+	display: table-cell;
+	vertical-align: middle;
+	border: 1px solid #fff;
+}
+.no-flexbox .two {
+	width: 48%;
+	margin: 0 1%;
+}
+.no-flexbox .three {
+	width: 31%;
+	margin: 0 1%;
+}
+.message { /* message that appears under the quiz answers */
+	clear: both;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+#modal {
+	width: 100%;
+	max-width: 1000px;
+	position: relative;
+	margin: 10% auto;
+	padding: 2rem 4rem;
+	box-sizing: border-box;
+	font-size: 2em; 
+	font-weight:bold;
+}
+
+/* Set colors */
+.answer {
+	background-color: gray; /* default color for quiz answers before clicking */
+}
+.answer:hover {
+	background-color: orange;
+}
+.answer.disable:hover, .disable.wrong:hover {
+	background-color: gray; /* keep same as default color to preven color change if question has already been answered correctly */
+}
+.clicked.wrong, .clicked.disable.wrong:hover {
+	background-color: red; /* change color when wrong */
+}
+.clicked.right, .disable.right:hover {
+	background-color: green; /* change color when right */
+}
+/* Winner Modal */
+#winner {
+	background: black;
+	background: rgba(0,0,0,0.5);
+}
+#modal {
+	background: white;
+}
+
+@media all and (max-width: 800px) {
+.options { /* Stack answers if screen gets too small */
+	flex-direction: column;
+}
+.answer {
+	margin: 0.5rem 0;
+}
+.flexbox .answer:first-child {
+	margin-right: 0;
+}
+.flexbox .three.answer:last-child {
+	margin-left: 0;
+}
+.two, .three {
+	width: 100%;
+}
+}
