@@ -2,6 +2,7 @@
 Randomize sets of quiz questions with answer confirmation and completion message.
 
 This does three things:
+
 1. **Displays a random set of quiz questions on screen** by hiding all sections with class "quiz" and then showing one based on a random number generated.  I have also included a loading animation if this takes too long.
 
 2. **Provides feedback on quiz answers** in a few different ways.
