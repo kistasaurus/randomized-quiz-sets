@@ -3,16 +3,18 @@ Randomize sets of quiz questions with answer confirmation and completion message
 
 This does three things:
 1. **Displays a random set of quiz questions on screen** by hiding all sections with class "quiz" and then showing one based on a random number generated.  I have also included a loading animation if this takes too long.
+
 2. **Provides feedback on quiz answers** in a few different ways.
   - When an answer is clicked, color of the item changes to indicate if it is correct or incorrect.
   - When an answer is clicked, a message shows indicating if the answer is correct or incorrect.
   - When an incorrect answer is clicked, that answer appears 'disabled' and no longer changes the mouse cursor, changes color when clicked, displays hover effects, or updates the message when clicked.
   - When the correct answer is clicked, all answers appear disabled as described above.
+
 3. **Displays congratulatory message when all answers are marked correct** by calculating the number of correct answers possible.  This number must be the same for all quizzes.  If all answers are correct a modal overlay window is shown.
 
 See a sample at http://thekristin.github.io/randomized-quiz-sets/
 
-##Files included and what they do.
+##Files included and what they do
 
 - **index.html** - includes quiz questions and modal window content, page structure.
 - **quiz.css** - includes the very very basic code you need to make this work, seperate from all other markup so you can use this with your own styling if you like.
