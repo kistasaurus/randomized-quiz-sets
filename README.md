@@ -15,13 +15,18 @@ This does three things:
 
 See a sample at http://thekristin.github.io/randomized-quiz-sets/
 
-##Files included and what they do
+##Usage
+
+You will need to include:
 
 - **index.html** - includes quiz questions and modal window content, page structure.
 - **quiz.css** - includes the very very basic code you need to make this work, seperate from all other markup so you can use this with your own styling if you like.
-- **style.css** - all styling as seen on the sample.
 - **js/check-quiz-answers.js** - check if answers are correct, feedback as answers are clicked, message if all correct answers are selected.
 - **js/display-random-content.js** - display a random set of questions on each page load.
+
+I've also included these files for styling, but the code with work without them (it just won't look as nice):
+
+- **style.css** - all styling as seen on the sample.
 - **js/modernizr.custom.62055.js** - check for flexbox support.
 
 ##Things you should know
