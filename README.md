@@ -15,7 +15,7 @@ This does three things:
 
 See a sample at http://thekristin.github.io/randomized-quiz-sets/
 
-##Usage
+## Usage
 
 You will need to include:
 
@@ -29,7 +29,7 @@ I've also included these files for styling, but the code with work without them 
 - **style.css** - All styling as seen on the sample.
 - **js/modernizr.custom.62055.js** - Uses modernizr  to check for flexbox support.
 
-###Randomly show/hide section or element
+### Randomly show/hide section or element
 
 This will allow random sections of content to show on the page at one time.
 
@@ -53,7 +53,7 @@ if (randomNumber == 1) {
 
 This is modified from "How to Display Random News or Content with JavaScript" by Extreme Design Studio @ http://www.extremestudio.ro/blog/?p=4273
 
-###Check quiz answers
+### Check quiz answers
 
 Quiz answers must be given the class "answer".  They must have the class "right" or "wrong".
 
@@ -84,7 +84,7 @@ To allow answers to change color on click, the suggested styles are (see samples
 }
 ```
 
-####Show correct/incorrect message
+#### Show correct/incorrect message
 
 After clicking an answer, show the user a message below the questions that varies if answer is right or wrong.
 
@@ -111,7 +111,7 @@ $(this).parent().siblings('.message').html('Close, try again.');
 // If it's right, show this message.
 $(this).parent().siblings('.message').html('You got it!');
 ```
-####Display message if all answers are correct.
+#### Display message if all answers are correct.
 
 Display a modal message if all questions shown are answered correctly. This must be the same number of correct answersfor all quizzes.
 
