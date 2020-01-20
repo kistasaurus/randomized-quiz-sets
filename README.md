@@ -1,4 +1,4 @@
-# randomized-quiz-sets
+# Randomized Quiz Sets
 Randomize sets of quiz questions with answer confirmation and completion message.
 
 This does three things:
