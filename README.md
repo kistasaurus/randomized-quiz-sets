@@ -13,7 +13,7 @@ This does three things:
 
 3. **Displays congratulatory message when all answers are marked correct** by calculating the number of correct answers possible.  This number must be the same for all quizzes.  If all answers are correct a modal overlay window is shown.
 
-See a sample at http://thekristin.github.io/randomized-quiz-sets/
+See a sample at https://kistasaurus.github.io/randomized-quiz-sets/
 
 ## Usage
 
